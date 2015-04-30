@@ -22,7 +22,11 @@ routes = ($stateProvider, $urlRouterProvider, $httpProvider) ->
       url         : '/register/confirm'
       templateUrl : 'register/confirm.html'
       controller  : 'register'
-
+    challenges:
+      url         : '/challenges'
+      templateUrl : 'challenges/challenges.html'
+      controller  : 'challenges'
+      
   for name, state of states
     $stateProvider.state name, state
 
